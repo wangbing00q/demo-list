@@ -1,0 +1,30 @@
+#main{width: 1000px;margin:0 auto;background: #fff}
+#main>div{margin-bottom: 20px;}
+#main>div>ul>li{width: 1000px;height: 150px;background: yellow;position: relative;}
+#main>div>ul>li>div>img{margin-left: 50px;margin-top: 30px;}
+h3>.shopmark{display: inline-block;width: 15px;height: 15px;border: 1px solid #000;margin-right: 5px;cursor: pointer;}
+h3{font-size: 16px;color: red}
+#main>.shop>ul>li>i{display: inline-block;width: 10px;height: 10px;border:1px solid #000;position: absolute;left: 20px;top: 60px;cursor: pointer;}
+#main>.shop>ul>li>.shangpinming{width: 200px;font-size: 10px;position: absolute;left: 140px;top: 25px;}
+#main>.shop>ul>li>.shangpintu{cursor: pointer;width: 80px;height: 80px;}
+#main>.shop>ul>li>.shangpinxinxi>span{display: block;width: 130px;font-size: 10px;color: grey;margin-bottom: 5px;}
+#main .shangpinxinxi{max-height: 100px;position: absolute;left: 370px;top: 25px; }
+#main .shangpinjiage .zheqian{font-size: 10px;color: grey;text-decoration: line-through;display: block;text-align: center;width: 70px;}
+#main .shangpinjiage .zhehou{font-size: 14px;color: #000;display: block;text-align: center;width: 70px;font-weight: bold}
+#main .shangpinjiage{position: absolute;left: 530px;top: 30px;}
+#main .shangpinshuliang{width: 70px;height: 30px;position: absolute;left: 640px;top: 45px;}
+#main .shangpinshuliang input{width: 30px;text-align: center;height: 20px;line-height: 20px;position: absolute;top: 0;left: 20px;}
+#main .shangpinshuliang i{font-style: normal;display: inline-block;width: 20px;height: 20px;background: pink;line-height: 20px;text-align: center;cursor: pointer}
+#main .shangpinshuliang .jian{position: absolute;left: 0;top: 0}
+#main .shangpinshuliang .jia{position: absolute;right: 0;top: 0}
+#main .zhanshijiage{font-size: 16px;color: red;font-weight: bold;position: absolute;left: 790px;top: 45px;}
+#main .shanchu{display: inline-block;width: 40px;height: 20px;line-height: 20px;position: absolute;right: 30px;top: 45px;text-decoration: underline;cursor: pointer;}
+#main>#jiesuan{position: relative;background: grey;height: 80px;width: 100%}
+#main>#jiesuan>i{display: inline-block;width: 10px;height: 10px;border:1px solid #000;position: absolute;left: 20px;top: 60px;cursor: pointer;}
+#jiesuan>#quanxuan{font-size: 14px;position: absolute;left: 35px;top: 56px;cursor: pointer;}
+#jiesuan>#quanshan{font-size: 14px;position: absolute;left: 80px;top: 56px;cursor: pointer;text-decoration: underline;color: red}
+#jiesuan>#yixuan{position: absolute;left: 500px;top: 45px}
+#yixuan>span{display: inline-block;font-size: 30px;color: red}
+#jiesuan>#heji{position: absolute;left: 640px;top: 45px}
+#heji>span{display: inline-block;font-size: 30px;color: red}
+#jiesuan1{width: 130px;height: 80px;background: lightblue;position: absolute;right: 0;outline: none;}

@@ -1,0 +1,124 @@
+// var data=[{shop:"薛文鹏的镐把子店",img:"images/TB2QBzwmFXXXXbCXXXXXXXXXXXX_!!21171835.jpg_80x80.jpg",cont:"加厚隔热防晒现代美式纯色窗帘布全遮光定制卧室客厅落地飘窗成品",info1:"尺寸：宽2高2.6米 布袋挂钩一片",info2:"浅灰色[暮光]",pride1:"280.00",pride2:"162.40",number:"1"},
+// {shop:"加多宝的袜子店",img:"images/TB2Q7i.vSVmpuFjSZFFXXcZApXa_!!2785160894.jpg_80x80.jpg",cont:"加厚美式棉麻全遮光窗帘隔音隔热客厅卧室窗帘布北欧纯色现代简约",info1:"尺寸：不加工/每米价格",info2:"黄色",pride1:"132.00",pride2:"66",number:"10"},
+// {shop:"农夫山泉的豆腐乳店",img:"images/TB14qtKnMmTBuNjy1XbL6SMrVXa_80x80.jpg",cont:"【可领用100元单品券】Meizu/魅族 魅族 15 PLUS 全网通公开版4G",info1:"网络类型：4G全网通",info2:"机身颜色：玄武灰",info3:"套餐类型：官方标配",info4:"存储容量：6+64GB",pride2:"2498.00",number:"1"},
+// {shop:"康师傅的围裙店",img:"images/TB2_zmFc80kpuFjy1XaXXaFkVXa_!!2106620341.jpg_80x80.jpg",cont:"ikbc poker升级版/新版poker2 60%mini机械键盘 樱桃轴红茶青黑",info1:"套餐类型：套餐一",info2:"颜色分类：Poker 白黑",pride2:"459.00",number:"1"},
+// {shop:"薛文鹏的镐把子店",img:"images/T244FzX2laXXXXXXXX-21171835.jpg_80x80.jpg",cont:"加厚隔热防晒现代美式纯色窗帘布全遮光定制卧室客厅落地飘窗成品",info1:"尺寸：宽2高2.6米 布袋挂钩一片",info2:"浅藕色[暮光]",pride1:"280.00",pride2:"162.40",number:"1"},
+// {shop:"薛文鹏的镐把子店",img:"images/T2kbOrXhlXXXXXXXXX_!!21171835.jpg_80x80.jpg",cont:"咖啡色现代简约美式纱帘定做客厅卧室书房飘窗纯色透光窗帘纱帘",info1:"尺寸：定制要几米拍几件（不含加工费）",info2:"颜色分类：网眼纱 白色",pride1:"109.00",pride2:"59.08",number:"3"},
+// {shop:"嘤嘤怪的大茬粥店",img:"images/TB2A9iAeWmWBuNjy1XaXXXCbXXa_!!1718249255.jpg_80x80.jpg",cont:"凯酷K10机械键盘樱桃轴108键87键PBT侧刻键4帽法拉利红键线分离",info1:"套餐类型：套餐一",info2:"颜色分类：87经典黑配DOLCH 侧刻",pride1:"899.00",pride2:"429.40",number:"1"},
+// ]
+
+var data=[{shop:"薛文鹏的镐把子店",datainfo:[{classify:"part1",img:"images/TB2QBzwmFXXXXbCXXXXXXXXXXXX_!!21171835.jpg_80x80.jpg",cont:"加厚隔热防晒现代美式纯色窗帘布全遮光定制卧室客厅落地飘窗成品",info1:"尺寸：宽2高2.6米 布袋挂钩一片",info2:"浅灰色[暮光]",pride1:"￥280.00",pride2:"162.40",number:"1",info3:"",info4:""},
+									{classify:"part1",img:"images/T244FzX2laXXXXXXXX-21171835.jpg_80x80.jpg",cont:"加厚隔热防晒现代美式纯色窗帘布全遮光定制卧室客厅落地飘窗成品",info1:"尺寸：宽2高2.6米 布袋挂钩一片",info2:"浅藕色[暮光]",pride1:"￥280.00",pride2:"162.40",number:"1",info3:"",info4:""},
+									{classify:"part1",img:"images/T2kbOrXhlXXXXXXXXX_!!21171835.jpg_80x80.jpg",cont:"咖啡色现代简约美式纱帘定做客厅卧室书房飘窗纯色透光窗帘纱帘",info1:"尺寸：定制要几米拍几件（不含加工费）",info2:"颜色分类：网眼纱 白色",pride1:"￥109.00",pride2:"59.08",number:"3",info3:"",info4:""}]},
+		{shop:"加多宝的袜子店",datainfo:[{classify:"part2",img:"images/TB2Q7i.vSVmpuFjSZFFXXcZApXa_!!2785160894.jpg_80x80.jpg",cont:"加厚美式棉麻全遮光窗帘隔音隔热客厅卧室窗帘布北欧纯色现代简约",info1:"尺寸：不加工/每米价格",info2:"黄色",pride1:"￥132.00",pride2:"66",number:"10",info3:"",info4:""}]},
+		{shop:"康师傅的围裙店",datainfo:[{classify:"part3",img:"images/TB2_zmFc80kpuFjy1XaXXaFkVXa_!!2106620341.jpg_80x80.jpg",cont:"ikbc poker升级版/新版poker2 60%mini机械键盘 樱桃轴红茶青黑",info1:"套餐类型：套餐一",info2:"颜色分类：Poker 白黑",pride1:"",pride2:"459.00",number:"1",info3:"",info4:""}]},
+		{shop:"嘤嘤怪的大茬粥店",datainfo:[{classify:"part4",img:"images/TB2A9iAeWmWBuNjy1XaXXXCbXXa_!!1718249255.jpg_80x80.jpg",cont:"凯酷K10机械键盘樱桃轴108键87键PBT侧刻键4帽法拉利红键线分离",info1:"套餐类型：套餐一",info2:"颜色分类：87经典黑配DOLCH 侧刻",pride1:"￥899.00",pride2:"429.40",number:"1",info3:"",info4:""}]},
+		{shop:"农夫山泉的豆腐乳店",datainfo:[{classify:"part5",img:"images/TB14qtKnMmTBuNjy1XbL6SMrVXa_80x80.jpg",cont:"【可领用100元单品券】Meizu/魅族 魅族 15 PLUS 全网通公开版4G",info1:"网络类型：4G全网通",info2:"机身颜色：玄武灰",info3:"套餐类型：官方标配",info4:"存储容量：6+64GB",pride1:"",pride2:"2498.00",number:"1"}]}]
+
+
+var arr=[]
+for(var k=0;k<data.length;k++){
+	arr.push(document.createElement('div'))
+	arr[k].className="shop"
+	main.appendChild(arr[k])
+}
+var hes=main.getElementsByClassName('shop')
+var jiesuan1=document.getElementById("jiesuan")
+	for(var k1=0;k1<hes.length;k1++){
+	main.insertBefore(hes[k1],jiesuan1)
+}
+
+data.forEach(function(item,index){
+	var str1=""
+	str1=`<h3><i class="shopmark"></i>${item.shop}</h3>`
+	data[index].datainfo.forEach(function(item,index){
+		str1+=`<ul>
+				<li>
+					<i class="commark ${item.classify}"></i>
+					<div class="shangpintu"><img src=${item.img} alt=""></div>
+					<p class="shangpinming">${item.cont}</p>
+					<p class="shangpinxinxi"><span>${item.info1}</span><span>${item.info2}</span><span>${item.info3}</span><span>${item.info4}</span></p>	
+					<p class="shangpinjiage"><span class="zheqian">${item.pride1}</span><span class="zhehou">￥${item.pride2}</span></p>
+					<div class="shangpinshuliang"><i class="jian"></i><i class="jia"></i><i class="jian">-</i><input type="text" value="${item.number}"><i class="jia">+</i></div>	
+					<p class="zhanshijiage">￥${item.number*item.pride2}</p>
+					<b class="shanchu">删除</b>
+				</li>
+			</ul>`
+	
+	})
+	hes[index].innerHTML=str1
+})
+
+var shopmark=document.getElementsByClassName('shopmark')
+var commark=document.getElementsByClassName('commark')
+for(let k3=0;k3<commark.length;k3++){
+	commark[k3].setAttribute("flag","false")
+}
+for(let k4=0;k4<shopmark.length;k4++){
+	shopmark[k4].setAttribute("flag","false")
+	shopmark[k4].setAttribute("index",k4)
+	shopmark[k4].onclick=function(ev){
+			if(ev.target.getAttribute("flag")=="false"){
+			ev.target.style.background="red"
+			ev.target.setAttribute("flag","true")
+			var commark_sin=hes[ev.target.getAttribute("index")].getElementsByClassName('commark')
+			for(var k5=0;k5<commark_sin.length;k5++){
+				commark_sin[k5].style.background="red"
+				commark_sin[k5].setAttribute("flag","true")
+			}
+		}else{
+			ev.target.style.background=""
+			ev.target.setAttribute("flag","false")
+			var commark_sin=hes[ev.target.getAttribute("index")].getElementsByClassName('commark')
+			for(var k5=0;k5<commark_sin.length;k5++){
+				commark_sin[k5].style.background=""
+				commark_sin[k5].setAttribute("flag","false")
+			}
+		}
+	}
+}
+
+
+for(var k6=0;k6<commark.length;k6++){
+	commark[k6].onclick=function(ev){
+		var commark_classname=ev.target.getAttribute("class")
+		console.log(commark_classname)
+		
+
+	}
+}
+
+// var commark_sin2=hes[k6].getElementsByClassName('commark')
+// for(var k6=0;k6<hes.length;k6++){
+// 		hes[k6].setAttribute("index2",k6)
+// 	}
+
+
+
+// 	for(var k7=0;k7<commark_sin2.length;k7++){
+// 		commark_sin2[k7].onclick=function(ev){
+// 			if(ev.target.getAttribute("flag")=="false"){
+// 				ev.target.setAttribute("flag","true")
+// 				ev.target.style.background="red"
+// 			}else{
+// 				ev.target.setAttribute("flag","false")
+// 				ev.target.style.background=""
+// 			}
+// 			console.log(this.parentNode.parentNode.parentNode.getAttribute("index2"))
+// 			for(var k8=0;k8<commark_sin2.length;k8++){
+// 				console.log(commark_sin2.length)
+// 				if(commark_sin2[k8].getAttribute("flag")=="true"){
+// 					shopmark[this.parentNode.parentNode.parentNode.getAttribute("index2")].style.background="red"
+// 					shopmark[this.parentNode.parentNode.parentNode.getAttribute("index2")].setAttribute("flag","true")
+// 				}else{
+// 					shopmark[this.parentNode.parentNode.parentNode.getAttribute("index2")].style.background=""
+// 					shopmark[this.parentNode.parentNode.parentNode.getAttribute("index2")].setAttribute("flag","false")
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+
+
+
