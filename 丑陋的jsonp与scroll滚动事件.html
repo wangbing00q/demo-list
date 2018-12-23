@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		ul,li{list-style: none}
+		body{height: 2000px;}
+		#nav{width: 100%;height:100px;background: lightblue;line-height: 100px;text-align: center;}
+		#box1{width: 100%;height: 50px;background: red;text-align: center;line-height: 50px;position: absolute;top: 100px;}
+		#box1 input{width:400px;height: 30px;}
+		#box2{width: 100%;height: 50px;background: green;text-align: center;line-height: 50px;position: fixed;top: 0px;display: none;}
+		#box2 input{width:400px;height: 30px;}
+		#ul1{position: absolute;left:372px;top:34px;background: #fff;width: 560px;border: 1px solid #38f;min-height: 170px;background: yellow;display: none}
+		#ul2{position: absolute;left:372px;top:34px;background: #fff;width: 560px;border: 1px solid #38f;min-height: 170px;background: yellow;display: none}
+		#ul3{width: 52px;height: 208px;position: fixed;right: 0;bottom: 0}
+		#ul3>li{width: 50px;height: 50px;line-height: 50px;text-align: center;border: 1px solid #000}
+	</style>
+</head>
+<body>
+	<div id="nav">我是一个nav</div>
+	<div id="box1"><input type="text" id="search1">
+	<ul id="ul1">
+		
+	</ul>
+	</div>
+	<div id="box2"><input type="text" id="search2">
+	<ul id="ul2">
+		
+	</ul>
+	</div>
+	<ul id="ul3">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+	</ul>
+	<script>
+	var lis=ul3.getElementsByTagName('li')
+		window.onscroll=function(){
+			if(document.documentElement.scrollTop>150){
+				box1.style.display="none"
+				box2.style.display="block"
+			}else{
+				box1.style.display="block"
+				box2.style.display="none"
+			}
+
+			if(document.documentElement.scrollTop>0&&document.documentElement.scrollTop<300){
+				lis[0].style.background="yellow"
+				lis[1].style.background=""
+				lis[2].style.background=""
+				lis[3].style.background=""
+			}else if(document.documentElement.scrollTop>=300&&document.documentElement.scrollTop<600){
+				lis[0].style.background=""
+				lis[1].style.background="yellow"
+				lis[2].style.background=""
+				lis[3].style.background=""
+			}else if(document.documentElement.scrollTop>=600&&document.documentElement.scrollTop<900){
+				lis[0].style.background=""
+				lis[1].style.background=""
+				lis[2].style.background="yellow"
+				lis[3].style.background=""
+			}else if(document.documentElement.scrollTop>=900&&document.documentElement.scrollTop<1500){
+				lis[0].style.background=""
+				lis[1].style.background=""
+				lis[2].style.background=""
+				lis[3].style.background="yellow"
+			}
+		}
+		function fn(a){
+			var str=""
+			a.s.forEach(function(item){
+				str+=`<li><a href="https://www.baidu.com/s?ie=UTF-8&wd=${item}">${item}</a></li>`
+			})
+			ul1.innerHTML=str
+			ul2.innerHTML=str
+		}
+		
+
+		search1.onkeydown=function(ev){
+		ul1.style.display="block"
+		var head1=document.getElementsByTagName('head')[0]
+		var s=document.createElement('script')
+		head1.appendChild(s)
+		s.src=`https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=${search1.value}&cb=fn`
+		head1.removeChild(s)
+		if(ev.keyCode==13){
+				window.location.href="https://www.baidu.com/s?ie=UTF-8&wd="+search1.value
+			}
+		}
+
+		search2.onkeydown=function(ev){
+		ul2.style.display="block"
+		var head1=document.getElementsByTagName('head')[0]
+		var s=document.createElement('script')
+		head1.appendChild(s)
+		s.src=`https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=${search2.value}&cb=fn`
+		head1.removeChild(s)
+		if(ev.keyCode==13){
+				window.location.href="https://www.baidu.com/s?ie=UTF-8&wd="+search2.value
+			}
+		}
+
+		search1.onblur=function(){
+			if(this.value==""){
+				ul1.style.display="none"
+			}
+		}
+
+		search2.onblur=function(){
+			if(this.value==""){
+				ul2.style.display="none"
+			}
+		}
+		
+	</script>
+</body>
+		
