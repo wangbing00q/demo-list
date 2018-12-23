@@ -1,0 +1,18 @@
+#tiaojian1{width: 800px;height: 200px;position: relative;}
+#tiaojian2{width: 800px;height: 100px;display: none}
+#more{width: 100px;height: 30px;background: lightblue;position: absolute;left: 50%;margin-left: -50px;bottom: 0;text-align: center;line-height: 30px;border-radius: 30px;cursor: pointer;}
+#leibie1{width: 100px;height: 200px;float: left;}
+#leibie2{width: 100px;height: 100px;float: left;}
+#leibie1>li{width: 100px;height: 50px;margin-bottom: 12px;background: pink;text-align: center;line-height: 50px;}
+#leibie2>li{width: 100px;height: 40px;margin-bottom: 12px;background: pink;text-align: center;line-height: 40px;}
+#guojia{width: 530px;height: 50px;margin-left: 170px;margin-bottom: 10px;}
+#xueliang{width: 530px;height: 50px;margin-left: 170px;margin-bottom: 10px;}
+#guojia>li{width: 120px;margin-right: 10px;background: yellow;float: left;height: 50px;line-height: 50px;text-align: center;cursor: pointer;}
+#xueliang>li{width: 120px;margin-right: 10px;background: lightblue;float: left;height: 50px;line-height: 50px;text-align: center;cursor: pointer;}
+#sex{width: 530px;height: 50px;margin-left: 170px;}
+#sex>li{width: 120px;margin-right: 10px;background: yellow;float: left;height: 50px;line-height: 50px;text-align: center;cursor: pointer;}
+#bag{width: 530px;height: 40px;margin-left: 170px;margin-bottom: 10px;}
+#bag>li{width: 95px;margin-right: 10px;background: lightblue;float: left;height: 40px;line-height: 40px;text-align: center;cursor: pointer;}
+#shuai{width: 530px;height: 40px;margin-left: 170px;margin-bottom: 10px;}
+#shuai>li{width: 95px;margin-right: 10px;background: lightblue;float: left;height: 40px;line-height: 40px;text-align: center;cursor: pointer;}
+#zhanshi li{width: 800px;height: 20px;font-size: 12px;color: #fff;background: #666666}
