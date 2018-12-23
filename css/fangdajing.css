@@ -1,0 +1,12 @@
+#img1{width: 300px;height: 300px;background: red;position: absolute;left: 0;top: 0}
+#img1 img{width:300px;height: 300px;opacity: 0}
+#img1>li{position: absolute;top: 0}
+#img2{width: 400px;height: 400px;background: yellow;position: absolute;left: 400px;top: 0;overflow: hidden;display: none}
+#img3>li{position: absolute;top: 0}
+#img3{width: 1200px;height: 1200px;position: absolute;left: 0;top: 0}
+#img2 img{width: 1200px;height: 1200px;}
+#ul1{width: 400px;position: absolute;top: 300px;}
+#ul1>li{width: 58px;height: 58px;border: 1px solid green;float: left;cursor: pointer;}
+#ul1>li>img{width: 58px;height: 58px;}
+#box{width: 300px;height: 300px;background: #000;position: relative;cursor: pointer;}
+#little{width: 100px;height: 100px;background: rgba(0,0,0,0.6);z-index: 333;position: absolute;left: 50%;top: 50%;display: none;margin-left: -50px;margin-top: -50px;}
