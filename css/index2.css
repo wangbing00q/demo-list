@@ -1,0 +1,33 @@
+/*总页面样式*/
+#zongyemian{max-width: 1920px;min-width: 1050px;width: 100%;margin: 0 auto;background: url(../images1/bg.jpg) center top no-repeat;}
+.main{width: 1200px;margin:0 auto;}
+#header{height: 480px;position: relative;}
+#searbac{width:542px;height: 98px;background: url(../images1/search.png) -20px -16px; border-radius: 50px;position: absolute;left: 50%;top: 86%;margin-left: -271px;margin-top: -49px;}
+#searbac #txt{width: 345px;height: 35px;background: url(../images1/search.png) -120px -34px;position: absolute;left:100px;top: 18px;text-indent: 20px;}
+#sear{width: 17px;height: 17px;background: url(../images1/search.png) -434px -43px;position: absolute;left: 414px;top: 27px;cursor: pointer;}
+#searbac p{width: 60px;position: absolute;left:100px;bottom: 16px;height: 20px;line-height: 20px;font-weight: bold;font-size: 16px;}
+#sear-hot{width: 100%;position: absolute;bottom: 15px;left: 178px;}
+#sear-hot>li{float: left;}
+#sear-hot>li>a{display: inline-block;width: 70px;text-align: center;height:20px;line-height:20px;font-size: 14px;color: #444;cursor: pointer; }
+#tab1 li{width: 240px;float: left;height: 127px;font-size: 42px;height: 127px;line-height: 127px;font-weight: bold;text-align: center;cursor: pointer;}
+#tab1li5{margin-right: 0}
+#zhuneirong{background: url(../images1/nav-bg.jpg);}
+#zhuneirong>.main{height: 127px;}
+#tab1 li:hover{background:url(../images1/nav-hover.jpg);color: #fff }
+#total{height: 1095px;background: #fff url(../images1/bot-bg.jpg) no-repeat bottom;z-index: 10;overflow: hidden;}
+#totalul>li{float: left;width: 200px;text-align: center;}
+#total img{display: block;margin-left: 44px;width: 116px;height: 166px;}
+#total span{display: block;height: 53px;line-height: 53px;font-size: 18px;color: grey}
+#yema{text-align: center;}
+#footer{width: 100%;background: url(../images/footer.jpg);padding: 140px 0 120px;position: relative;}
+#yklogo{display: inline-block;}
+#yklogo>a{display:block;width: 271px;height: 44px;background: url(../images/youka.png);}
+#footer .bord_r{width: 1px;height: 44px;display: inline-block;background: #c9c9c9;margin-left: 16px;margin-right: 16px;}
+#yklogos{display: inline-block;}
+#footer>#footerimg>#yklogos i{display: inline-block;width: 43px;height: 42px;background:url(../images/wenzi.png);margin-right: 8px;}
+#footer>#footerimg>#yklogos em{display: inline-block;width: 43px;height: 42px;background:url(../images/jing.png);margin-right: 8px;}
+#footer>#footerimg>#yklogos b{cursor:pointer;display: inline-block;width: 35px;height: 42px;background:url(../images/gong.png);margin-right: 8px;}
+#footer>#footerimg>#yklogos strong{display: inline-block;width: 43px;height: 42px;background:url(../images/youxidzbq.png);}
+#footerimg{position: absolute;left: 30px;}
+#footertxt{position: absolute;left: 637px;font-size: 8px;color: grey;width: 658px;top: 120px;letter-spacing: -0.2px;line-height: 20px;}
+#footertxt span{display: inline-block;width: 1px;height: 10px;background: grey}

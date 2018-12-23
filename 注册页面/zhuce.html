@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/zhuce.css">
+	<link rel="stylesheet" href="css/clearstyle.css">
+</head>
+<body>
+	<div id="cont">
+
+		<div id="main">
+			<div id="header">
+				<div id="logo"></div>
+				<div id="chance"></div>
+				<div id="banner"></div>
+			</div>
+			<div id="zhuti">
+				<ul id="tab1">
+					<li id="mobile1" style="background:#c9242a;"><a id="mobile1si" style="display: inline-block;"></a><i></i><span>手机注册</span></li>
+					<li id="email1"><a id="email1si"></a><i></i><span>邮箱注册</span></li>
+					<li id="personal1"><a id="personal1si"></a><i></i><span>个性注册</span></li>
+				</ul>
+				<form action="" id="mopage" style="display: block;">
+					<input type="text" placeholder="手机号码（必须填写）" class="shuru wenzi" id="sjhm">
+					<div id="sjwtishi1"><i class="hx"></i>个性账号未填写</div>
+					<div id="sjwtishi2"><i class="hx"></i>注册手机号码填写不正确</div>
+					<div id="sjtishi"><i class="th"></i>11位数字</div>
+					<div id="imgyz" class="shuru">
+						<b id="imgnum"></b>
+						<input type="text" placeholder="验证码（必须填写）" class="yanzheng1" id="yanzhengma1">
+						<div id="imgyzwtishi1"><i class="hx"></i>验证码不能为空</div>
+						<div id="imgyzwtishi2"><i class="hx"></i>验证码应为6位</div>
+						<div id="imgyzwtishi3"><i class="hx"></i>验证码不正确</div>
+						<div id="imgyztishi"><i class="th"></i>图片内字符，区分大小写</div>
+					</div>
+					<div id="mesyz" class="shuru">
+						<input type="text" placeholder="短信验证码（必须填写）" class="yanzheng2" id="yanzhengma2">
+						<b id="monum">免费获取验证码</b>
+						<div id="mesyzwtishi1"><i class="hx"></i>验证码未填写</div>
+						<div id="mesyzwtishi2"><i class="hx"></i>验证码应为6位</div>
+						<div id="mesyzwtishi3"><i class="hx"></i>验证码不正确</div>
+						<div id="mesyztishi"><i class="th"></i>请填写短信中的6位数字，收不到请重试</div>
+					</div>
+					<input type="text" placeholder="静态密码（必须填写）" class="shuru wenzi" id="jtpas1" index="1">
+					<input type="password" placeholder="静态密码（必须填写）" class="shuru wenzi" id="jtpas2" index="0">
+					<div id="paswtishi1"><i class="hx"></i>密码未填写</div>
+					<div id="paswtishi2"><i class="hx"></i>密码过于简单，不能为同一字符</div>
+					<div id="paswtishi3"><i class="hx"></i>密码过短，至少6位字母和数字</div>
+					<div id="paswtishi4"><i class="hx"></i>密码过长，最多30位字母和数字</div>
+					<div id="pastishi1"><i class="th"></i>6~30位字母或数字，<span id="yincangpas1" index="1">隐藏密码</span>
+						<ul>
+							<li id="ruo1">弱</li>
+							<li id="zhong1">中</li>
+							<li id="qiang1">强</li>
+						</ul>
+					</div>
+					<div id="pastishi2"><i class="th"></i>6~30位字母或数字，<span id="yincangpas2" index="0">显示密码</span>
+						<ul>
+							<li id="ruo2">弱</li>
+							<li id="zhong2">中</li>
+							<li id="qiang2">强</li>
+						</ul>
+					</div>
+
+					<strong id="fenge"></strong>
+					<h3 id="fcm">实名及防沉迷信息填写<span id="why">为什么要填写<p id="jutitiaoyue">根据《网络游戏管理暂行办法》，网络游戏用户需使用有效身份证件进行实名注册。为保证流畅游戏体验，享受健康游戏生活，请广大游卡通行证用户尽快实名注册。<br/>保护未成年人身心健康，未满18岁的用户将受到防沉迷系统的限制，游戏过程，会提示您的累计在线时间：<br/>累计游戏时间超过3小时，游戏收益（经验，金钱）减半。<br/>累计游戏时间超过5小时，游戏收益为0.</p></span></h3>
+					<input type="text" placeholder="真实姓名（必须填写）" class="shuru wenzi" id="name1">
+					<div id="namewtishi1"><i class="hx"></i>姓名未填写</div>
+					<div id="namewtishi2"><i class="hx"></i>填写错误，姓名为2~5个汉字</div>
+					<div id="nametishi"><i class="th"></i>2~5个汉字</div>
+					<input type="text" placeholder="身份证号码（必须填写）" class="shuru wenzi" id="id1">
+					<div id="idwtishi1"><i class="hx"></i>身份证号码未填写</div>
+					<div id="idwtishi2"><i class="hx"></i>身份证号码填写错误</div>
+					<div id="idtishi"><i class="th"></i>请填写15或18位身份证号码</div>
+					<h3 id="xieyi"><input type="checkbox" id="check" index="0"><span id="firm">已阅读并同意</span><a href="http://register.dobest.cn/public/service_agreements.html?v1" target="_blank" id="userxieyi">用户协议</a></h3>
+					<button id="tijiao"></button>
+				</form>
+
+				<form action="" id="mailpage" style="display: none">
+					<input type="text" placeholder="邮箱（必须填写）" class="shuru wenzi" id="sjhm1" >
+					<div id="sjwtishi11"><i class="hx"></i>注册邮箱未填写</div>
+					<div id="sjwtishi21"><i class="hx"></i>邮箱填写错误，请更正</div>
+					<div id="sjtishi1"><i class="th"></i>目前只支持.com .net .cn .org后缀的邮箱</div>
+					<input type="text" placeholder="静态密码（必须填写）" class="shuru wenzi" id="jtpas11" index="1">
+					<input type="password" placeholder="静态密码（必须填写）" class="shuru wenzi" id="jtpas21" index="0">
+					<div id="paswtishi11"><i class="hx"></i>密码未填写</div>
+					<div id="paswtishi21"><i class="hx"></i>密码过于简单，不能为同一字符</div>
+					<div id="paswtishi31"><i class="hx"></i>密码过短，至少6位字母和数字</div>
+					<div id="paswtishi41"><i class="hx"></i>密码过长，最多30位字母和数字</div>
+					<div id="pastishi11"><i class="th"></i>6~30位字母或数字，<span id="yincangpas11" index="1">隐藏密码</span>
+						<ul>
+							<li id="ruo11">弱</li>
+							<li id="zhong11">中</li>
+							<li id="qiang11">强</li>
+						</ul>
+					</div>
+					<div id="pastishi21"><i class="th"></i>6~30位字母或数字，<span id="yincangpas21" index="0">显示密码</span>
+						<ul>
+							<li id="ruo21">弱</li>
+							<li id="zhong21">中</li>
+							<li id="qiang21">强</li>
+						</ul>
+					</div>
+					<strong id="fenge1"></strong>
+					<h3 id="fcm1">实名及防沉迷信息填写<span id="why1">为什么要填写<p id="jutitiaoyue1">根据《网络游戏管理暂行办法》，网络游戏用户需使用有效身份证件进行实名注册。为保证流畅游戏体验，享受健康游戏生活，请广大游卡通行证用户尽快实名注册。<br/>保护未成年人身心健康，未满18岁的用户将受到防沉迷系统的限制，游戏过程，会提示您的累计在线时间：<br/>累计游戏时间超过3小时，游戏收益（经验，金钱）减半。<br/>累计游戏时间超过5小时，游戏收益为0.</p></span></h3>
+					<input type="text" placeholder="真实姓名（必须填写）" class="shuru wenzi" id="name11">
+					<div id="namewtishi11"><i class="hx"></i>姓名未填写</div>
+					<div id="namewtishi21"><i class="hx"></i>填写错误，姓名为2~5个汉字</div>
+					<div id="nametishi1"><i class="th"></i>2~5个汉字</div>
+					<input type="text" placeholder="身份证号码（必须填写）" class="shuru wenzi" id="id11">
+					<div id="idwtishi11"><i class="hx"></i>身份证号码未填写</div>
+					<div id="idwtishi21"><i class="hx"></i>身份证号码填写错误</div>
+					<div id="idtishi1"><i class="th"></i>请填写15或18位身份证号码</div>
+					<div id="imgyz1" class="shuru">
+						<b id="imgnum1"></b>
+						<input type="text" placeholder="验证码（必须填写）" class="yanzheng1" id="yanzhengma11">
+						<div id="imgyzwtishi11"><i class="hx"></i>验证码不能为空</div>
+						<div id="imgyzwtishi21"><i class="hx"></i>验证码应为6位</div>
+						<div id="imgyzwtishi31"><i class="hx"></i>验证码不正确</div>
+						<div id="imgyztishi1"><i class="th"></i>图片内字符，区分大小写</div>
+					</div>
+					<h3 id="xieyi1"><input type="checkbox" id="check1" index="0"><span id="firm1">已阅读并同意</span><a href="http://register.dobest.cn/public/service_agreements.html?v1" target="_blank" id="userxieyi1">用户协议</a></h3>
+					<button id="tijiao1"></button>
+				</form>
+				<!-- 个性注册 -->
+				<form action="" id="perpage">
+					<input type="text" placeholder="个性账号（必须填写）" class="shuru wenzi" id="sjhm2" >
+					<div id="sjwtishi12"><i class="hx"></i>个性账号未填写</div>
+					<div id="sjwtishi22"><i class="hx"></i>长度过短，至少4位字母和数字</div>
+					<div id="sjwtishi32"><i class="hx"></i>个性账号首位必须是字母</div>
+					<div id="sjwtishi42"><i class="hx"></i>长度过长，最多16位字母和数字</div>
+					<div id="sjtishi2"><i class="th"></i>4-16位字母或数字，首位为字母</div>
+					
+					<input type="text" placeholder="注册手机号码（与邮箱选填一项）" class="shuru wenzi" id="sjhm3">
+					<div id="sjwtishi13"><i class="hx"></i>注册手机号码未填写</div>
+					<div id="sjwtishi23"><i class="hx"></i>注册手机号码填写不正确，非大陆手机请填写邮箱</div>
+					<div id="sjtishi3"><i class="th"></i>11位数字，非中国大陆手机号码请填写邮箱</div>
+
+					<input type="text" placeholder="注册邮箱（与手机号码选填一项）" class="shuru wenzi" id="sjhm4" >
+					<div id="sjwtishi14"><i class="hx"></i>注册邮箱未填写</div>
+					<div id="sjwtishi24"><i class="hx"></i>邮箱填写错误，请更正</div>
+					<div id="sjtishi4"><i class="th"></i>目前只支持.com .net .cn .org后缀的邮箱</div>
+
+					<input type="text" placeholder="静态密码（必须填写）" class="shuru wenzi" id="jtpas12" index="1">
+					<input type="password" placeholder="静态密码（必须填写）" class="shuru wenzi" id="jtpas22" index="0">
+					<div id="paswtishi12"><i class="hx"></i>密码未填写</div>
+					<div id="paswtishi22"><i class="hx"></i>密码过于简单，不能为同一字符</div>
+					<div id="paswtishi32"><i class="hx"></i>密码过短，至少6位字母和数字</div>
+					<div id="paswtishi42"><i class="hx"></i>密码过长，最多30位字母和数字</div>
+					<div id="pastishi12"><i class="th"></i>6~30位字母或数字，<span id="yincangpas12" index="1">隐藏密码</span>
+						<ul>
+							<li id="ruo12">弱</li>
+							<li id="zhong12">中</li>
+							<li id="qiang12">强</li>
+						</ul>
+					</div>
+					<div id="pastishi22"><i class="th"></i>6~30位字母或数字，<span id="yincangpas22" index="0">显示密码</span>
+						<ul>
+							<li id="ruo22">弱</li>
+							<li id="zhong22">中</li>
+							<li id="qiang22">强</li>
+						</ul>
+					</div>
+						
+					<strong id="fenge2"></strong>
+					<h3 id="fcm2">实名及防沉迷信息填写<span id="why2">为什么要填写<p id="jutitiaoyue2">根据《网络游戏管理暂行办法》，网络游戏用户需使用有效身份证件进行实名注册。为保证流畅游戏体验，享受健康游戏生活，请广大游卡通行证用户尽快实名注册。<br/>保护未成年人身心健康，未满18岁的用户将受到防沉迷系统的限制，游戏过程，会提示您的累计在线时间：<br/>累计游戏时间超过3小时，游戏收益（经验，金钱）减半。<br/>累计游戏时间超过5小时，游戏收益为0.</p></span></h3>
+					<input type="text" placeholder="真实姓名（必须填写）" class="shuru wenzi" id="name12">
+					<div id="namewtishi12"><i class="hx"></i>姓名未填写</div>
+					<div id="namewtishi22"><i class="hx"></i>填写错误，姓名为2~5个汉字</div>
+					<div id="nametishi2"><i class="th"></i>2~5个汉字</div>
+					<input type="text" placeholder="身份证号码（必须填写）" class="shuru wenzi" id="id12">
+					<div id="idwtishi12"><i class="hx"></i>身份证号码未填写</div>
+					<div id="idwtishi22"><i class="hx"></i>身份证号码填写错误</div>
+					<div id="idtishi2"><i class="th"></i>请填写15或18位身份证号码</div>
+
+					<input type="text" placeholder="邮箱（选填）" class="shuru wenzi" id="sjhm5" >
+					<div id="sjwtishi15"><i class="hx"></i>注册邮箱未填写</div>
+					<div id="sjwtishi25"><i class="hx"></i>邮箱填写错误，请更正</div>
+					<div id="sjtishi5"><i class="th"></i>目前只支持.com .net .cn .org后缀的邮箱</div>
+
+					<div id="imgyz2" class="shuru">
+						<b id="imgnum2"></b>
+						<input type="text" placeholder="验证码（必须填写）" class="yanzheng1" id="yanzhengma12">
+						<div id="imgyzwtishi12"><i class="hx"></i>验证码不能为空</div>
+						<div id="imgyzwtishi22"><i class="hx"></i>验证码应为6位</div>
+						<div id="imgyzwtishi32"><i class="hx"></i>验证码不正确</div>
+						<div id="imgyztishi2"><i class="th"></i>图片内字符，区分大小写</div>
+					</div>
+						
+					<h3 id="xieyi2"><input type="checkbox" id="check2" index="0"><span id="firm2">已阅读并同意</span><a href="http://register.dobest.cn/public/service_agreements.html?v1" target="_blank" id="userxieyi2">用户协议</a></h3>
+
+					<button id="tijiao2"></button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<ul>
+			<li><a href="http://www.12377.cn/">不良信息举报中心</a><i class="zcborder"></i></li>
+			<li><a href="http://www.cyberpolice.cn/wfjb/">网络110报警服务</a><i class="zcborder"></i></li>
+			<li><a href="http://report.ccm.gov.cn/">文化市场举报热线</a></li>
+		</ul>
+		<p id="footp1">客服热线：【0571-85209642】，来访接待【杭州市余杭区五常街道西溪软件园金牛座A-7楼】</p>
+		<p id="footp2">杭州游卡网络技术有限公司 版权所有</p>
+	</div>
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/zhuce.js"></script>
+</body>
+</html>
