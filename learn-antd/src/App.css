@@ -1,0 +1,24 @@
+@import '~antd/dist/antd.css';
+
+.logo {
+  width: 120px;
+  height: 31px;
+  background: #001529;
+  margin: 0 28px 16px 0;
+  float: left;
+  padding: 0;
+  color:#fff;
+  font-size: 20px;
+}
+
+.upload-list-inline .ant-upload-list-item {
+  float: left;
+  width: 360px;
+  margin-right: 8px;
+}
+.upload-list-inline .ant-upload-animate-enter {
+  animation-name: uploadAnimateInlineIn;
+}
+.upload-list-inline .ant-upload-animate-leave {
+  animation-name: uploadAnimateInlineOut;
+}
