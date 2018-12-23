@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>教学后台 | 登录</title>
+  {{include "./layout/style.art"}}
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+
+<body class="hold-transition login-page">
+  <div class="login-box">
+    <div class="login-logo">
+      <a href="#"><b>教学</b>后台</a>
+    </div>
+    <!-- /.login-logo -->
+    <div class="login-box-body">
+      <p class="login-box-msg">登入系统</p>
+
+      <form>
+        <div class="form-group has-feedback">
+          <input type="email" class="form-control" placeholder="用户名" name="email">
+          <span class="glyphicon glyphicon-user form-control-feedback"></span>
+        </div>
+        <div class="form-group has-feedback">
+          <input type="password" class="form-control" placeholder="密码" name="password">
+          <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+        </div>
+        <div class="row">
+          <div class="col-xs-8">
+            <a href="#">忘记密码？</a><br>
+            <a href="/signup" class="text-center">去注册一个新用户</a>
+          </div>
+          <!-- /.col -->
+          <div class="col-xs-4">
+            <button type="submit" class="btn btn-primary btn-block btn-flat">登 录</button>
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
+    </div>
+    <!-- /.login-box-body -->
+  </div>
+  <!-- /.login-box -->
+
+{{include "./layout/script.art"}}
+  <script>
+      $("form").on("submit",function(ev){
+      ev.preventDefault()
+      $.ajax({
+        url:"/signin",
+        method:"post",
+        data:$(this).serialize(),
+        success:function(res){
+          alert(res.msg)
+          if(res.state ==200){
+            location="/"
+          }
+        }
+      })
+    })
+  </script>
+</body>
+
+</html>
